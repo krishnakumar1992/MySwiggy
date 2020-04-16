@@ -1,0 +1,25 @@
+{% extends 's_admin/comman.html' %}
+
+{% block common %}
+    {% if request.session.status %}
+    <div class="row">
+    <div class="col-sm-2">
+
+
+     </div>
+        <div class="col-sm-8">
+            {% include 's_admin/menu.html' %}
+            <h3>welcome to home page</h3>
+
+        </div>
+    <div class="col-sm-8">
+
+    </div>
+
+    {% else %}
+    <h3 style="text-align: center; font-family: 'Agency FB'; font-size: 30px;color:red">
+    State Opratraions
+    </h3>
+        </div>
+ {% endif %}
+{% endblock %}

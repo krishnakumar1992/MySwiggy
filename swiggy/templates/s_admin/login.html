@@ -1,0 +1,33 @@
+{% extends 's_admin/comman.html' %}
+
+ {% block common %}
+     <form action="{% url 'cheakLogin' %}" method="post">
+     {% csrf_token %}
+    <table align="center" border="0">
+    <tr>
+        <th colspan="2" height="80" width="100" style="font-size: 30px; text-align: center;font-family:Arial ">Admin Login Page</th>
+    </tr>
+    <tr>
+        <td height="80" width="100">usernem</td>
+        <td><input class="form-control" type="text" required name="admin_username"> </td>
+    </tr>
+    <tr>
+        <td height="80" width="100">password</td>
+        <td><input class="form-control" type="password" required name="admin_password"> </td>
+    </tr>
+    <tr>
+
+        <td colspan="2" align="center" height="80" width="100"><button type="submit" class="btn btn-primary">Login </button> </td>
+    </tr>
+       {% for x in messages %}
+        <tr>
+
+        <td colspan="2" align="center" height="80" width="100">
+
+            {{ x }}
+        </td>
+    </tr>
+        {% endfor %}
+    </table>
+     </form>
+    {% endblock %}

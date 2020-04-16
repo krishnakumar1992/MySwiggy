@@ -1,0 +1,33 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-primary">
+  <a class="navbar-brand" href="{% url 'admin_home' %}">Admin</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse"
+                 id="navbarSupportedContent">
+    <ul class="navbar-nav navbar-center">
+      <li class="nav-item active">
+        <a class="nav-link" href="{% url 'open_state' %}">State <span class="sr-only">(current)</span></a>
+      </li>
+         <li class="nav-item active">
+        <a class="nav-link" href="{% url 'open_city' %}">City <span class="sr-only">(current)</span></a>
+      </li>
+         <li class="nav-item active">
+        <a class="nav-link" href="{% url 'open_area' %}">Area <span class="sr-only">(current)</span></a>
+      </li>
+        </li>
+         <li class="nav-item active">
+        <a class="nav-link" href="#">Type <span class="sr-only">(current)</span></a>
+      </li>
+         <li class="nav-item active">
+        <a class="nav-link" href="{% url 'open_restauant' %}">Restaurant <span class="sr-only">(current)</span></a>
+      </li>
+          </li>
+        </ul>
+          <ul class="nav navbar-nav navbar-right">
+         <li class="nav-item active">
+        <a class="nav-link" href="{% url 'admin_logout' %}">Logout </a>
+      </li>
+    </ul>
+  </div>
+</nav>

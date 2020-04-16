@@ -1,0 +1,107 @@
+{% extends 's_admin/comman.html' %}
+
+{% block common %}
+    {% if request.session.status %}
+    <div class="row">
+    <div class="col-sm-2">
+
+
+     </div>
+        <div class="col-sm-8">
+            {% include 's_admin/menu.html' %}
+
+                {% if sf %}
+                     <form action="{% url 'save_state' %}" method="post">
+                {% csrf_token %}
+          <table align="center" border="0" width="500">
+              <tr>
+                  <th colspan="2" height="35px" style="text-align: center;">  <h3>State Oprations </h3></th>
+              </tr>
+              <tr>
+                  <th style="text-align: center">
+                      {{ sf.state_name.label }}
+                  </th>
+                  <th style="text-align: center"> {{ sf.state_name }}</th>
+                  <th style="text-align: center">
+                      {{ sf.state_name.errors  }}
+                  </th>
+              </tr>
+              <tr>
+                  <th colspan="2" style="text-align: center" height="60">
+                      <button type="submit" class="btn btn-primary">save</button>
+                  </th>
+
+              </tr>
+
+
+          </table>
+                     </form>
+                    {% elif update_state %}
+                    <form action="{% url 'update_state_data' %}" method="post">
+                    {% csrf_token %}
+                     <table align="center" border="0" width="500" style="color: chartreuse">
+              <tr>
+                  <th colspan="2" height="35px" style="text-align: center;"><h3>State Update Oprations </h3></th>
+              </tr>
+              <tr>
+                  <th style="text-align: center">State No.</th>
+                  <th style="text-align: center">
+                      {{ update_state.sno }}
+                      <input type="hidden" value="{{ update_state.sno }}" name="s1">
+                  </th>
+                  <tr>
+                  <th style="text-align: center"> State Name </th>
+                  <th style="text-align: center">
+                      <input class="form-control" type="text" value="{{ update_state.sname  }}" name="s2">
+                  </th>
+              </tr>
+              <tr>
+                  <th colspan="2" style="text-align: center" height="60">
+                      <button type="submit" class="btn btn-success">Update</button>
+                  </th>
+
+              </tr>
+
+
+          </table>
+</form>
+                    {% endif %}
+
+
+             <table align="center" border="1" width="500">
+                <tr>
+                    <th style="text-align: center" colspan="4">
+                        Show all State name
+                    </th>
+                </tr>
+                 <tr>
+                    <th style="text-align: center">No</th>
+                    <th style="text-align: center">Name</th>
+                    <th style="text-align: center">Update</th>
+                    <th style="text-align: center">Delete</th>
+                 </tr>
+                 {% for x in sdate %}
+                <tr>
+
+                    <th style="text-align: center">{{ x.state_no }}</th>
+                    <th style="text-align: center">{{ x.state_name}}</th>
+                    <th style="text-align: center"><a href="{% url 'update_state' %}?sno={{ x.state_no }}&name={{ x.state_name }}">Update</a></th>
+                    <th style="text-align: center"><a href="{% url 'delete_state' %}?sno={{ x.state_no }}">Delete </a></th>
+
+                </tr>
+                 {% endfor %}
+            </table>
+
+
+        </div>
+    <div class="col-sm-2">
+
+    </div>
+
+    {% else %}
+    <h3 style="text-align: center; font-family: 'Agency FB'; font-size: 30px;color:red">
+    State Opratraions
+    </h3>
+        </div>
+ {% endif %}
+{% endblock %}
