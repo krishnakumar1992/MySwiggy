@@ -1,7 +1,8 @@
 from django.shortcuts import render,redirect
-from s_admin.models import AdminLoginModel
+from s_admin.models import *
 from django.contrib import messages
 from s_admin.forms import *
+from restaurant.models import RestaurantModel
 
 # Create your views here.
 def adminLogin(request):
@@ -132,3 +133,47 @@ def delete_area(request):
     sno = request.GET.get('sno')
     Areamodel.objects.filter(Area_no=sno).delete()
     return redirect('open_area')
+
+
+def open_type(request):
+    return render(request, 's_admin/open_type.html',{'sf':RestaurantForm(),'sdate':RestautantType.objects.all()})
+
+
+def save_type(request):
+    sf = RestaurantForm(request.POST)
+    if sf.is_valid():
+        sf.save()
+        return redirect('open_type')
+    else:
+        return render(request,'s_admin/open_type.html',{'sf': sf})
+
+
+def update_type(request):
+    sno = request.GET.get('sno')
+    sname = request.GET.get('name')
+    data = {'sno': sno, 'sname': sname}
+    return render(request, 's_admin/open_type.html',{'update_city': data, 'sdate': RestautantType.objects.all()})
+
+
+def update_type_data(request):
+    sno = request.POST.get('s1')
+    sname = request.POST.get('s2')
+    RestautantType.objects.filter(no=sno).update(type_name=sname)
+    return redirect('open_type')
+
+
+def delete_type(request):
+    sno = request.GET.get('sno')
+    RestautantType.objects.filter(no=sno).delete()
+    return redirect('open_type')
+
+
+def pending_rest(request):
+    rs=RestaurantModel.objects.filter(rest_statue='pending')
+    return render(request,'s_admin/pending_rest.html',{'data':rs})
+
+
+def approve_rest(request):
+    rno=request.GET.get('rno')
+    RestaurantModel.objects.filter(rest_id=rno).update(rest_statue='approved')
+    return redirect('admin_home')

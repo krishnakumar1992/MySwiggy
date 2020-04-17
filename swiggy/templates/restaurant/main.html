@@ -1,0 +1,26 @@
+{% extends 'restaurant/comman.html' %}
+
+{% block common %}
+  {% include 'restaurant/main_menu.html' %}
+
+<div class="row">
+ <div class="col-sm-2">
+
+ </div>
+<div class="col-sm-8">
+    <br>
+     <h1 style="text-align: center; font-family: 'Times New Roman';">Restaurant Home page</h1>
+    <br>
+    {% for x in messages %}
+    <div class="alert alert-success alert-dismissible">
+  <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+  <strong>Success!</strong> {{ x }}
+</div>
+            {% endfor %}
+ </div>
+<div class="col-sm-2">
+
+ </div>
+
+</div>
+{% endblock %}

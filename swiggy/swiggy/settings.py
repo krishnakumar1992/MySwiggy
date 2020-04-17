@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     's_admin.apps.SAdminConfig',
     'restaurant.apps.RestaurantConfig',
     'Customer.apps.CustomerConfig',
+    'crispy_forms',
 ]
 
 MIDDLEWARE = [

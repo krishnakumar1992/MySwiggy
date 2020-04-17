@@ -1,0 +1,31 @@
+{% extends 'restaurant/comman.html' %}
+{% load crispy_forms_tags %}
+{% block common %}
+  {% include 'restaurant/main_menu.html' %}
+
+    <form action="{% url 'save_rest' %}" method="post">
+    {% csrf_token %}
+<div class="row">
+ <div class="col-sm-2">
+
+ </div>
+<div class="col-sm-8 text-center">
+    <br>
+     <h1 style="text-align: center; font-family: 'Times New Roman';">Restaurant Home page</h1>
+
+    <table align="center">{{ rf.as_table }}</table>
+<div class="text-center">
+    <br>
+    <button type="submit" class="btn btn-success">Registration</button>
+</div>
+
+</div>
+
+ </div>
+<div class="col-sm-2">
+
+ </div>
+
+</div>
+    </form>
+{% endblock %}
