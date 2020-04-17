@@ -15,12 +15,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from restaurant import views
 
 urlpatterns = [
     # path('admin/', admin.site.urls),
-    path('',views.showmain,name='resto'),
-    path('register/',views.register_page,name='register'),
-    path('save_rest',views.save_rest,name='save_rest'),
 
 ]

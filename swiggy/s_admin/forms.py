@@ -1,5 +1,5 @@
 from django import forms
-from s_admin.models import Statemodel,Citymodel,Areamodel,RestautantType
+from s_admin.models import Statemodel,Citymodel,Areamodel
 
 class StateForm(forms.ModelForm):
     class Meta:
@@ -17,8 +17,3 @@ class AreaForm(forms.ModelForm):
         model=Areamodel
         fields="__all__"
         exclude=('Area_no',)
-
-class RestaurantForm(forms.ModelForm):
-    class Meta:
-        model=RestautantType
-        fields=['type_name']
