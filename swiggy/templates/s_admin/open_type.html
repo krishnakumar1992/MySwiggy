@@ -37,8 +37,8 @@
 
           </table>
                      </form>
-                    {% elif update_city %}
-                    <form action="{% url 'update_area_data' %}" method="post">
+                    {% elif update_type %}
+                    <form action="{% url 'update_type_data' %}" method="post">
                     {% csrf_token %}
                      <table align="center" border="0" width="500" style="color: chartreuse">
               <tr>
@@ -47,13 +47,13 @@
               <tr>
                   <th style="text-align: center">State Name</th>
                   <th style="text-align: center">
-                      {{ update_city.sno }}
-                      <input type="hidden" value="{{ update_city.sno }}" name="s1">
+                      {{ update_type.tno }}
+                      <input type="hidden" value="{{ update_type.tno }}" name="t1">
                   </th>
                          <tr>
                   <th style="text-align: center"> city Name </th>
                   <th style="text-align: center">
-                      <input class="form-control" type="text" value="{{ update_city.sname  }}" name="s2">
+                      <input class="form-control" type="text" value="{{ update_type.tname  }}" name="t2">
                   </th>
               </tr>
 
@@ -71,26 +71,23 @@
                     {% endif %}
 
 
-             <table align="center" border="1" width="500">
-                <tr>
-                    <th style="text-align: center" colspan="4">
-                        Show all Area name
-                    </th>
-                </tr>
+             <table class="table table-hover">
+        <thead>
                  <tr>
-                    <th style="text-align: center">No</th>
-                    <th style="text-align: center">Name</th>
-                    <th style="text-align: center">Update</th>
-                    <th style="text-align: center">Delete</th>
+                    <th style="text-align: center" scope="col">No</th>
+                    <th style="text-align: center" scope="col">Name</th>
+                    <th style="text-align: center" scope="col">Update</th>
+                    <th style="text-align: center" scope="col">Delete</th>
                  </tr>
-                 {% for x in sdate %}
+                 </thead>
+                 {% for x in tdata %}
                 <tr>
 
-                    <th style="text-align: center">{{ x.no }}</th>
-                    <th style="text-align: center">{{ x.type_name}}</th>
+                    <th style="text-align: center" scope="col">{{ x.no }}</th>
+                    <th style="text-align: center" scope="col">{{ x.type_name}}</th>
 
-                    <th style="text-align: center"><a href="{% url 'update_type' %}?sno={{ x.no }}&name={{ x.type_name }}">Update</a></th>
-                    <th style="text-align: center"><a href="{% url 'delete_type' %}?sno={{ x.no }}">Delete </a></th>
+                    <th style="text-align: center"><a href="{% url 'update_type' %}?tno={{ x.no }}&tname={{ x.type_name }}">Update</a></th>
+                    <th style="text-align: center"><a href="{% url 'delete_type' %}?tno={{ x.no }}">Delete </a></th>
 
                 </tr>
                  {% endfor %}

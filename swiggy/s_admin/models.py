@@ -23,3 +23,11 @@ class Areamodel(models.Model):
     Area_no=models.AutoField(primary_key=True)
     Area_name=models.CharField(max_length=40,unique=True)
     City=models.ForeignKey(Citymodel,on_delete=models.CASCADE)
+
+
+class RestaurantTypeModel(models.Model):
+    no = models.AutoField(primary_key=True)
+    type_name = models.CharField(max_length=50)
+
+    def __str__(self):
+        return self.type_name
