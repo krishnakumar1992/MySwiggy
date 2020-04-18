@@ -1,19 +1,83 @@
 {% extends 's_admin/comman.html' %}
+{% load static %}
+{% block additional_styles %}
+<style>
+img:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+</style>
+
+      {% endblock %}
+
+{% block bg %}style="background-image: url({% static 'image/Admin_home_page.jpg' %});background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;background-size: 1300px 900px;" {% endblock %}
 
 {% block common %}
     {% if request.session.status %}
     <div class="row">
     <div class="col-sm-2">
-
+<div class="panel panel-default">
+    <marquee  direction = "up" height="500px">
+    <p style=" text-align: justify;color: #fffcff;">
+        In 2013 two founders, Sriharsha Majety and
+        Nandan Reddy, designed an e-commerce website
+        called "Bundl" to facilitate courier service
+        and ship goods within India.[9] Bundl was quickly
+        paused, and they moved into the food delivery market.
+        At the time, the food delivery sector was in turmoil
+        as several notable startups, such as Foodpanda (later
+        acquired by Ola Cabs), TinyOwl (later acquired by Zomato)
+        and Ola Cafe (later closed) were struggling.[9][10] Majety
+        and Reddy approached Rahul Jaimini, formerly with Myntra,
+        and founded Swiggy and parent holding company Bundl
+        Technologies in 2014.[10] The company built out a
+        dedicated delivery network and grew rapidly, primarily
+        driven by the focus
+        on logistics and locking in key resources.[10]
+    </p>
+        </marquee >
+  </div>
 
      </div>
         <div class="col-sm-8">
             {% include 's_admin/menu.html' %}
-            <h3>welcome to home page</h3>
+            <br>
+            <h3 style="text-align: center;font-size: 70px;font-family: 'Blackadder ITC';color: #fffcff">welcome to home page</h3>
+         <img src="{% static 'image/food/food1..png' %}" alt="Pineapple" width="260" height="180">
+            <img src="{% static 'image/food/food8.png' %}" alt="Pineapple" width="260" height="180">
+            <img src="{% static 'image/food/food3.png' %}" alt="Pineapple" width="260" height="180">
+            <img src="{% static 'image/food/food4.png' %}" alt="Pineapple" width="260" height="180">
+            <img src="{% static 'image/food/food5.png' %}" alt="Pineapple" width="260" height="180">
+            <img src="{% static 'image/food/food6.png' %}" alt="Pineapple" width="260" height="180">
 
         </div>
-    <div class="col-sm-8">
-
+    <div class="col-sm-2">
+        <marquee  direction = "up" height="500px">
+         <img src="{% static 'image/food/food _side/food1..png' %}" alt="Pineapple" width="190" height="100-">
+         <img src="{% static 'image/food/food _side/food1.jpg' %}" alt="Pineapple" width="190" height="100-">
+         <img src="{% static 'image/food/food _side/food2.jpg' %}" alt="Pineapple" width="190" height="100-">
+         <img src="{% static 'image/food/food _side/food3.jpg' %}" alt="Pineapple" width="190" height="100-">
+         <img src="{% static 'image/food/food _side/food4.jpg' %}" alt="Pineapple" width="190" height="100-">
+         <img src="{% static 'image/food/food _side/food5.jpg' %}" alt="Pineapple" width="190" height="100-">
+         <img src="{% static 'image/food/food _side/food6.jpg' %}" alt="Pineapple" width="190" height="100-">
+         <img src="{% static 'image/food/food _side/comhiclipartbrouh.jpg' %}" alt="Pineapple" width="190" height="100-">
+        </marquee>
     </div>
 
     {% else %}

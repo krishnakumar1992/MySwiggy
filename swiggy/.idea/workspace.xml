@@ -2,12 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a7adeb2a-e0d9-4c50-9ef8-86a28f5cf80c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/static/image/food/food _side/comhiclipartbrouh.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/image/food/food _side/food1..png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/image/food/food _side/food1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/image/food/food _side/food2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/image/food/food _side/food3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/image/food/food _side/food4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/image/food/food _side/food5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/image/food/food _side/food6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/image/home_login.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/image/restaurnat_home_login.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/s_admin/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/s_admin/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/s_admin/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/s_admin/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/s_admin/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/s_admin/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/s_admin/menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/s_admin/menu.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/swiggy/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/swiggy/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/s_admin/admin_home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/s_admin/admin_home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/s_admin/comman.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/s_admin/comman.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/s_admin/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/s_admin/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/s_admin/open_area.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/s_admin/open_area.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/s_admin/open_city.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/s_admin/open_city.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/s_admin/open_state.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/s_admin/open_state.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/s_admin/open_type.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/s_admin/open_type.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/s_admin/pending_rest.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/s_admin/pending_rest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/s_admin/show_approved_rest.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/s_admin/show_approved_rest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/s_admin/show_cancel_rest.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/s_admin/show_cancel_rest.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,38 +53,39 @@
     <session id="-514147456">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="6" />
+          <entry key="project.closed" value="8" />
           <entry key="project.open.time.20" value="1" />
           <entry key="project.open.time.213" value="1" />
           <entry key="project.open.time.25" value="1" />
           <entry key="project.open.time.41" value="1" />
+          <entry key="project.open.time.42" value="1" />
           <entry key="project.open.time.47" value="1" />
           <entry key="project.open.time.50" value="1" />
           <entry key="project.open.time.54" value="1" />
-          <entry key="project.opened" value="7" />
+          <entry key="project.opened" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="cell" value="26" />
-          <entry key="html" value="3530" />
-          <entry key="py" value="2843" />
+          <entry key="html" value="4286" />
+          <entry key="py" value="2902" />
           <entry key="py@swiggy" value="36" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CommandLine" value="36" />
-          <entry key="HTML" value="3530" />
-          <entry key="Python" value="2843" />
+          <entry key="HTML" value="4286" />
+          <entry key="Python" value="2902" />
           <entry key="Scratch" value="26" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="django_session" value="2" />
-          <entry key="html" value="30" />
-          <entry key="py" value="33" />
+          <entry key="html" value="44" />
+          <entry key="py" value="36" />
           <entry key="s_admin_adminloginmodel" value="1" />
           <entry key="s_admin_statemodel" value="1" />
         </counts>
@@ -75,8 +93,8 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Database Element" value="4" />
-          <entry key="HTML" value="30" />
-          <entry key="Python" value="33" />
+          <entry key="HTML" value="44" />
+          <entry key="Python" value="36" />
         </counts>
       </usages-collector>
     </session>
@@ -84,34 +102,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/restaurant/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="17" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="17" />
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/s_admin/pending_rest.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="43" column="32" lean-forward="true" selection-end-line="60" selection-end-column="14" />
-              <folding>
-                <element signature="e#293#381#0#HTML" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/s_admin/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="57" column="34" selection-start-line="57" selection-start-column="34" selection-end-line="57" selection-end-column="34" />
+            <state relative-caret-position="323">
+              <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
               <folding>
                 <element signature="e#630#662#0" expanded="true" />
               </folding>
@@ -122,8 +116,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/s_admin/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="307">
-              <caret line="192" column="45" lean-forward="true" selection-start-line="192" selection-start-column="45" selection-end-line="192" selection-end-column="45" />
+            <state relative-caret-position="68">
+              <caret line="8" column="37" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
               <folding>
                 <element signature="e#0#44#0" expanded="true" />
               </folding>
@@ -132,48 +126,77 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/s_admin/show_cancel_rest.html">
+        <entry file="file://$PROJECT_DIR$/templates/s_admin/login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="151">
-              <caret line="14" column="116" selection-start-line="14" selection-start-column="116" selection-end-line="14" selection-end-column="116" />
+            <state relative-caret-position="85">
+              <caret line="5" column="79" selection-start-line="3" selection-end-line="5" selection-end-column="79" />
               <folding>
-                <element signature="e#293#381#0#HTML" expanded="true" />
+                <element signature="n#style#0;n#th#0;n#tr#0;n#table#0;n#form#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#0;n#tr#1;n#table#0;n#form#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#0;n#tr#2;n#table#0;n#form#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/s_admin/show_approved_rest.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="24" lean-forward="true" selection-end-line="58" selection-end-column="14" />
-              <folding>
-                <element signature="e#293#381#0#HTML" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/s_admin/menu.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="26" column="61" selection-start-line="26" selection-start-column="45" selection-end-line="26" selection-end-column="61" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/restaurant/urls.py">
+        <entry file="file://$PROJECT_DIR$/templates/restaurant/comman.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
-              <caret line="21" column="41" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="41" />
+              <caret line="15" column="8" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/restaurant/login.html">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/s_admin/comman.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="13" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/s_admin/admin_home.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="124">
+              <caret line="66" column="53" selection-start-line="66" selection-start-column="53" selection-end-line="66" selection-end-column="53" />
               <folding>
-                <element signature="e#630#662#0" expanded="true" />
+                <element signature="e#1213#1277#0#HTML" expanded="true" />
+                <element signature="e#1296#1383#0#HTML" expanded="true" />
+                <element signature="e#353#432#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/swiggy/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2176">
+              <caret line="128" column="15" selection-start-line="128" selection-start-column="15" selection-end-line="128" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/restaurant/main_menu.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="22" column="6" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/restaurant/main.html">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -199,27 +222,28 @@
       <list>
         <option value="$PROJECT_DIR$/Customer/urls.py" />
         <option value="$PROJECT_DIR$/s_admin/admin.py" />
-        <option value="$PROJECT_DIR$/templates/s_admin/comman.html" />
-        <option value="$PROJECT_DIR$/templates/s_admin/login.html" />
-        <option value="$PROJECT_DIR$/templates/s_admin/admin_home.html" />
-        <option value="$PROJECT_DIR$/templates/s_admin/open_state.html" />
-        <option value="$PROJECT_DIR$/templates/s_admin/open_city.html" />
-        <option value="$PROJECT_DIR$/templates/s_admin/open_area.html" />
         <option value="$PROJECT_DIR$/s_admin/forms.py" />
-        <option value="$PROJECT_DIR$/templates/s_admin/open_type.html" />
         <option value="$PROJECT_DIR$/restaurant/models.py" />
         <option value="$PROJECT_DIR$/restaurant/forms.py" />
         <option value="$PROJECT_DIR$/restaurant/urls.py" />
         <option value="$PROJECT_DIR$/swiggy/urls.py" />
         <option value="$PROJECT_DIR$/restaurant/views.py" />
-        <option value="$PROJECT_DIR$/swiggy/settings.py" />
         <option value="$PROJECT_DIR$/s_admin/models.py" />
-        <option value="$PROJECT_DIR$/templates/s_admin/pending_rest.html" />
-        <option value="$PROJECT_DIR$/templates/s_admin/show_approved_rest.html" />
         <option value="$PROJECT_DIR$/templates/s_admin/menu.html" />
         <option value="$PROJECT_DIR$/s_admin/views.py" />
-        <option value="$PROJECT_DIR$/templates/s_admin/show_cancel_rest.html" />
         <option value="$PROJECT_DIR$/s_admin/urls.py" />
+        <option value="$PROJECT_DIR$/templates/s_admin/show_cancel_rest.html" />
+        <option value="$PROJECT_DIR$/templates/s_admin/show_approved_rest.html" />
+        <option value="$PROJECT_DIR$/templates/s_admin/pending_rest.html" />
+        <option value="$PROJECT_DIR$/templates/s_admin/open_type.html" />
+        <option value="$PROJECT_DIR$/templates/s_admin/open_state.html" />
+        <option value="$PROJECT_DIR$/templates/s_admin/open_city.html" />
+        <option value="$PROJECT_DIR$/templates/s_admin/open_area.html" />
+        <option value="$PROJECT_DIR$/swiggy/settings.py" />
+        <option value="$PROJECT_DIR$/templates/restaurant/comman.html" />
+        <option value="$PROJECT_DIR$/templates/s_admin/login.html" />
+        <option value="$PROJECT_DIR$/templates/s_admin/comman.html" />
+        <option value="$PROJECT_DIR$/templates/s_admin/admin_home.html" />
       </list>
     </option>
   </component>
@@ -231,9 +255,8 @@
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="10" />
-    <option name="y" value="20" />
-    <option name="width" value="1350" />
-    <option name="height" value="690" />
+    <option name="width" value="660" />
+    <option name="height" value="730" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -257,6 +280,37 @@
             <path>
               <item name="swiggy" type="b2602c69:ProjectViewProjectNode" />
               <item name="swiggy" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="swiggy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="swiggy" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="image" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="swiggy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="swiggy" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="image" type="462c0819:PsiDirectoryNode" />
+              <item name="food" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="swiggy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="swiggy" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="image" type="462c0819:PsiDirectoryNode" />
+              <item name="food" type="462c0819:PsiDirectoryNode" />
+              <item name="food _side" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="swiggy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="swiggy" type="462c0819:PsiDirectoryNode" />
+              <item name="swiggy" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="swiggy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="swiggy" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -275,12 +329,18 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.console.LAST_STATE" value="false" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/MySwiggyApplication" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="J:\python project\realtimeproject\MySwiggy\swiggy\templates\s_admin" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="J:\python project\realtimeproject\MySwiggy\swiggy\static\image\food" />
+      <recent name="J:\python project\realtimeproject\MySwiggy\swiggy\static\image\food\food _side" />
+      <recent name="J:\python project\realtimeproject\MySwiggy\swiggy\static\image" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -335,9 +395,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28590605" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28993288" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -415,13 +474,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/s_admin/comman.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://86982b1d-c8ec-4813-a5ab-0741bb4a5512/schema/main/table/django_session">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -436,101 +488,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/s_admin/admin_home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
-          <folding>
-            <element signature="e#323#402#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/s_admin/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="15" column="38" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/s_admin/save_state.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/s_admin/tests.py">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/s_admin/open_city.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="105" column="93" lean-forward="true" selection-end-line="116" selection-end-column="14" />
-          <folding>
-            <element signature="e#490#517#0#HTML" expanded="true" />
-            <element signature="e#611#637#0#HTML" expanded="true" />
-            <element signature="e#732#758#0#HTML" expanded="true" />
-            <element signature="e#806#832#0#HTML" expanded="true" />
-            <element signature="e#969#995#0#HTML" expanded="true" />
-            <element signature="e#1086#1112#0#HTML" expanded="true" />
-            <element signature="e#1207#1233#0#HTML" expanded="true" />
-            <element signature="e#1649#1674#0#HTML" expanded="true" />
-            <element signature="e#1743#1770#0#HTML" expanded="true" />
-            <element signature="e#1869#1895#0#HTML" expanded="true" />
-            <element signature="e#1934#1960#0#HTML" expanded="true" />
-            <element signature="e#2169#2195#0#HTML" expanded="true" />
-            <element signature="e#2235#2261#0#HTML" expanded="true" />
-            <element signature="e#2500#2526#0#HTML" expanded="true" />
-            <element signature="e#2836#2862#0#HTML" expanded="true" />
-            <element signature="e#3013#3039#0#HTML" expanded="true" />
-            <element signature="e#3072#3098#0#HTML" expanded="true" />
-            <element signature="e#3133#3159#0#HTML" expanded="true" />
-            <element signature="e#3195#3221#0#HTML" expanded="true" />
-            <element signature="e#3258#3284#0#HTML" expanded="true" />
-            <element signature="e#3404#3430#0#HTML" expanded="true" />
-            <element signature="e#3476#3502#0#HTML" expanded="true" />
-            <element signature="e#3549#3575#0#HTML" expanded="true" />
-            <element signature="e#3618#3644#0#HTML" expanded="true" />
-            <element signature="e#3782#3808#0#HTML" expanded="true" />
-            <element signature="e#4034#4113#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/s_admin/open_area.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1632">
-          <caret line="96" column="70" selection-start-line="96" selection-start-column="70" selection-end-line="96" selection-end-column="70" />
-          <folding>
-            <element signature="e#3512#3538#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/s_admin/open_state.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-427">
-          <caret line="44" column="19" lean-forward="true" selection-start-line="44" selection-start-column="19" selection-end-line="44" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/s_admin/open_type.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="90" lean-forward="true" selection-start-line="90" selection-end-line="90" />
-          <folding>
-            <element signature="e#743#769#0#HTML" expanded="true" />
-            <element signature="e#1951#1977#0#HTML" expanded="true" />
-            <element signature="e#2017#2043#0#HTML" expanded="true" />
-            <element signature="e#2250#2276#0#HTML" expanded="true" />
-            <element signature="e#2763#2789#0#HTML" expanded="true" />
-            <element signature="e#2822#2848#0#HTML" expanded="true" />
-            <element signature="e#2883#2909#0#HTML" expanded="true" />
-            <element signature="e#2946#2972#0#HTML" expanded="true" />
-            <element signature="e#3092#3118#0#HTML" expanded="true" />
-            <element signature="e#3159#3185#0#HTML" expanded="true" />
-            <element signature="e#3233#3259#0#HTML" expanded="true" />
-            <element signature="e#3372#3398#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/swiggy/urls.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -548,26 +507,6 @@
           </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/swiggy/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="42" column="19" selection-start-line="42" selection-start-column="19" selection-end-line="42" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/restaurant/registration.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="20" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/restaurant/main.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/restaurant/main_menu.html">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/s_admin/models.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -590,9 +529,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="34" lean-forward="true" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -600,9 +536,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="17" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -616,13 +549,64 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/s_admin/pending_rest.html">
+    <entry file="file://$PROJECT_DIR$/templates/s_admin/show_cancel_rest.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="43" column="32" lean-forward="true" selection-end-line="60" selection-end-column="14" />
+        <state relative-caret-position="253">
+          <caret line="54" column="4" lean-forward="true" selection-start-line="54" selection-start-column="4" selection-end-line="54" selection-end-column="29" />
           <folding>
             <element signature="e#293#381#0#HTML" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/s_admin/show_approved_rest.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="54" column="4" selection-start-line="54" selection-start-column="4" selection-end-line="54" selection-end-column="31" />
+          <folding>
+            <element signature="e#293#381#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/s_admin/save_state.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/s_admin/pending_rest.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="56" column="25" selection-start-line="56" selection-start-column="25" selection-end-line="56" selection-end-column="25" />
+          <folding>
+            <element signature="e#293#381#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/s_admin/open_type.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="103" column="4" selection-start-line="103" selection-start-column="4" selection-end-line="103" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/s_admin/open_state.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="102" column="36" selection-start-line="102" selection-start-column="36" selection-end-line="102" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/s_admin/open_city.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="112" column="32" selection-start-line="112" selection-start-column="32" selection-end-line="112" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/s_admin/open_area.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="112" column="22" selection-start-line="112" selection-start-column="22" selection-end-line="112" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -633,42 +617,87 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/restaurant/registration.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="13" column="20" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/s_admin/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+          <folding>
+            <element signature="e#630#662#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/s_admin/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="192" column="45" lean-forward="true" selection-start-line="192" selection-start-column="45" selection-end-line="192" selection-end-column="45" />
+        <state relative-caret-position="68">
+          <caret line="8" column="37" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
           <folding>
             <element signature="e#0#44#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/s_admin/show_approved_rest.html">
+    <entry file="file://$PROJECT_DIR$/templates/restaurant/comman.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="24" lean-forward="true" selection-end-line="58" selection-end-column="14" />
+        <state relative-caret-position="255">
+          <caret line="15" column="8" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/restaurant/login.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swiggy/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2176">
+          <caret line="128" column="15" selection-start-line="128" selection-start-column="15" selection-end-line="128" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/restaurant/main_menu.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="6" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/restaurant/main.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/s_admin/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="79" selection-start-line="3" selection-end-line="5" selection-end-column="79" />
           <folding>
-            <element signature="e#293#381#0#HTML" expanded="true" />
+            <element signature="n#style#0;n#th#0;n#tr#0;n#table#0;n#form#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#1;n#table#0;n#form#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#2;n#table#0;n#form#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/s_admin/show_cancel_rest.html">
+    <entry file="file://$PROJECT_DIR$/templates/s_admin/comman.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="14" column="116" selection-start-line="14" selection-start-column="116" selection-end-line="14" selection-end-column="116" />
-          <folding>
-            <element signature="e#293#381#0#HTML" expanded="true" />
-          </folding>
+        <state relative-caret-position="170">
+          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="13" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/s_admin/urls.py">
+    <entry file="file://$PROJECT_DIR$/templates/s_admin/admin_home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="57" column="34" selection-start-line="57" selection-start-column="34" selection-end-line="57" selection-end-column="34" />
+        <state relative-caret-position="124">
+          <caret line="66" column="53" selection-start-line="66" selection-start-column="53" selection-end-line="66" selection-end-column="53" />
           <folding>
-            <element signature="e#630#662#0" expanded="true" />
+            <element signature="e#1213#1277#0#HTML" expanded="true" />
+            <element signature="e#1296#1383#0#HTML" expanded="true" />
+            <element signature="e#353#432#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
