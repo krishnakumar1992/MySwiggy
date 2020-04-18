@@ -19,10 +19,16 @@
          <li class="nav-item active">
         <a class="nav-link" href="{% url 'open_type' %}">Type <span class="sr-only">(current)</span></a>
       </li>
-         <li class="nav-item active">
-        <a class="nav-link" href="{% url 'open_restauant' %}">Restaurant <span class="sr-only">(current)</span></a>
-      </li>
-          </li>
+        <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Restaurant</a>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="{% url 'show_approved_rest' %}">Approved</a>
+      <a class="dropdown-item" href="{% url 'pending_rest' %}">pending</a>
+      <a class="dropdown-item" href="{% url 'show_cancel_rest' %}">cancel</a>
+      <a class="dropdown-item" href="#">send message</a>
+      <a class="dropdown-item" href="#">view message</a>
+    </div>
+        </li>
         </ul>
           <ul class="nav navbar-nav navbar-right">
          <li class="nav-item active">

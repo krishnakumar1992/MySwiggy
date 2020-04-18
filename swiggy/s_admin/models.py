@@ -26,7 +26,6 @@ class Areamodel(models.Model):
     def __str__(self):
         return self.Area_name
 
-
 class RestaurantTypeModel(models.Model):
     no = models.AutoField(primary_key=True)
     type_name = models.CharField(max_length=50)

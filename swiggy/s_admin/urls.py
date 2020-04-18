@@ -26,7 +26,7 @@ urlpatterns = [
 
 
 
-    path('open_restauant/',views.open_restauant,name='open_restauant'),
+
     # state
     path('open_state/', views.open_state, name='open_state'),
     path('save_state/',views.save_state,name='save_state'),
@@ -51,5 +51,14 @@ urlpatterns = [
     path('update_type/', views.update_type, name="update_type"),
     path('update_type_data/', views.update_type_data, name="update_type_data"),
     path('delete_type/', views.delete_type, name='delete_type'),
+
+    # ============restaurant url =======================
+    path('approved_rest/', views.approved_rest,name='approved_rest'),
+    path('cancel_rest/', views.cancel_rest,name='cancel_rest'),
+# ============restaurant show data url =======================
+    path('show_approved_rest/', views.show_approved_rest,name='show_approved_rest'),
+    path('show_cancel_rest/', views.show_cancel_rest,name='show_cancel_rest'),
+    path('pending_rest/', views.pending_rest, name='pending_rest'),
+
 
 ]

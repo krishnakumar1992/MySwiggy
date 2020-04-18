@@ -2,6 +2,7 @@ from django.shortcuts import render,redirect
 from s_admin.models import AdminLoginModel
 from django.contrib import messages
 from s_admin.forms import *
+from restaurant.models import RestaurantModel
 
 # Create your views here.
 def adminLogin(request):
@@ -33,8 +34,7 @@ def open_state(request):
     return render(request,'s_admin/open_state.html',{'sf':StateForm(),'sdate':Statemodel.objects.all()})
 
 
-def open_restauant(request):
-    return None
+
 
 
 def save_state(request):
@@ -164,3 +164,30 @@ def delete_type(request):
     tno = request.GET.get("tno")
     RestaurantTypeModel.objects.filter(no=tno).delete()
     return redirect('open_type')
+
+# =====================restaurant view ================================
+def pending_rest(request):
+    rs=RestaurantModel.objects.filter(restro_status='pending')
+    return render(request,'s_admin/pending_rest.html',{'data':rs})
+
+
+def approved_rest(request):
+    rno=request.GET.get('rno')
+    RestaurantModel.objects.filter(restro_id=rno).update(restro_status='approved')
+    return redirect('admin_home')
+
+
+def cancel_rest(request):
+    rno = request.GET.get('rno')
+    RestaurantModel.objects.filter(restro_id=rno).update(restro_status='cancel')
+    return redirect('admin_home')
+
+
+def show_approved_rest(request):
+    rs = RestaurantModel.objects.filter(restro_status='approved')
+    return render(request, 's_admin/show_approved_rest.html', {'data': rs})
+
+
+def show_cancel_rest(request):
+    rs = RestaurantModel.objects.filter(restro_status='cancel')
+    return render(request, 's_admin/show_cancel_rest.html', {'data': rs})

@@ -12,7 +12,7 @@
 
 
             <div class="text-center">
-                 <h1 style="text-align: center;color:#ff961a;font-family:'Permanent Marker';font-size:45px  ">pending Restaurant Informations</h1>
+                 <h1 style="text-align: center;color:#ff961a;font-family:'Permanent Marker';font-size:45px  ">Cancel Restaurant Informations</h1>
                 <table class="table table-bordered">
   <thead>
     <tr>
@@ -22,8 +22,7 @@
       <th scope="col">Email</th>
       <th scope="col">Area</th>
       <th scope="col">Type</th>
-      <th scope="col">Approve</th>
-      <th scope="col">Cancel</th>
+
     </tr>
   </thead>
                     {% for x in data %}
@@ -36,8 +35,7 @@
       <td>{{ x.restro_email }}</td>
       <td>{{ x.restro_area }}<br> {{ x.restro_area.City.City_name }} <br>{{ x.restro_area.City.State.state_name }}</td>
       <td>{{ x.restro_type }}</td>
-      <td><a href="{% url 'approved_rest' %}?rno={{ x.restro_id }}">Approve</a></td>
-      <td><a href="{% url 'cancel_rest' %}?rno={{ x.restro_id }}">Cancel</a></td>
+
 
     </tr>
    </tbody>
