@@ -7,3 +7,7 @@ class RestaurantForm(forms.ModelForm):
         model = RestaurantModel
         fields = "__all__"
         exclude = ('restro_id', 'restro_otp', 'restro_status')
+
+class RestaurantLoginForm(forms.Form):
+    contact_no=forms.IntegerField()
+    password=forms.CharField(max_length=40,widget=forms.PasswordInput)

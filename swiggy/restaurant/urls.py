@@ -22,5 +22,8 @@ urlpatterns = [
     path('', views.showMain, name="restro"),
     path('register/', views.registerPage, name="register"),
     path('save_rest/', views.save_res, name="save_rest"),
+    path('resto_login/', views.resto_login, name="resto_login"),
+    path('resto_login_cheack/', views.resto_login_cheack, name="resto_login_cheack"),
+    path('restro_home/', views.restro_home, name="restro_home"),
 
 ]

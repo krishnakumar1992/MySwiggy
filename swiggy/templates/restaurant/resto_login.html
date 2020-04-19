@@ -1,0 +1,37 @@
+{% extends 'restaurant/comman.html' %}
+{% load crispy_forms_tags %}
+{% block common %}
+  {% include 'restaurant/main_menu.html' %}
+
+    <form action="{% url 'resto_login_cheack' %}" method="post">
+    {% csrf_token %}
+<div class="row">
+ <div class="col-sm-2">
+
+ </div>
+<div class="col-sm-8 text-center">
+    <br>
+     <h1 style="text-align: center; font-family: 'Times New Roman';">Restaurant Login Form</h1>
+
+    <table align="center">{{ loginForm.as_table }}</table>
+<div class="text-center">
+    <br>
+    <button type="submit" class="btn btn-danger">Login</button>
+    {% if error %}
+    <div class="alert alert-danger alert-dismissible">
+  <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+  <strong>danger!</strong> {{ error }}
+        {% endif %}
+</div>
+</div>
+
+</div>
+
+ </div>
+<div class="col-sm-2">
+
+ </div>
+
+</div>
+    </form>
+{% endblock %}

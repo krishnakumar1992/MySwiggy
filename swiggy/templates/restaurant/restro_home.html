@@ -1,0 +1,10 @@
+{% extends 'restaurant/comman.html' %}
+
+{% block common %}
+    {% if request.session.status %}
+
+        welcome
+        {% else %}
+        <h3>Does Not show </h3>
+    {% endif %}
+{% endblock %}
