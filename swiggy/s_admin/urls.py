@@ -19,6 +19,7 @@ from s_admin import views
 
 urlpatterns = [
     # path('admin/', admin.site.urls),
+
     path('',views.adminLogin, name='admin_login'),
     path('checkalogin/',views.cheakLogin,name='cheakLogin'),
     path('admin_home/',views.admin_home, name='admin_home'),

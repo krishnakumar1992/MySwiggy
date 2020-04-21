@@ -191,3 +191,5 @@ def show_approved_rest(request):
 def show_cancel_rest(request):
     rs = RestaurantModel.objects.filter(restro_status='cancel')
     return render(request, 's_admin/show_cancel_rest.html', {'data': rs})
+
+

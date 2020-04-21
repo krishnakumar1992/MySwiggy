@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        a.ahovar:hover
+        {
+            background-color:#ffce11;
+            text-shadow: 4px 4px 4px #000000;
+            color: white;
+            border-radius:40px;
+        }
+        #bgimage
+        {
+            background-image: url({% static 'user/backgond.jpg' %});
+             background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: top;
+            background-size: 1300px 650px;"
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+<div id="bgimage">
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">WebSiteName</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Search</a></li>
+      <li class="active"><a href="#">Offer</a></li>
+     <li class="active"><a href="#">Help</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="{% url 'restro' %}"><span class="glyphicon glyphicon-user"></span> For Restaurant</a></li>
+      <li><a href="{% url 'admin_login' %}"><span class="glyphicon glyphicon-log-in"></span> Admin Login </a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-3" style="margin-top: 50px;">
+
+        </div>
+          <div class="col-lg-6" style="margin-top: 50px;">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="card" style="width:250px">
+                    <img class="card-img-top" src="{% static 'image/food/food6.png' %}" alt="Card image" style="height: 200px;width: 220px">
+                    <div class="card-body">
+                    <h4 class="card-title">John Doe</h4>
+                        <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                        <a href="#" class="btn btn-primary ahovar ">See Profile</a>
+                 </div>
+                </div><br>
+                        <div class="card" style="width:250px">
+                    <img class="card-img-top" src="{% static 'image/food/food5.png' %}" alt="Card image"  style="height: 200px;width: 220px">
+                    <div class="card-body">
+                    <h4 class="card-title">John Doe</h4>
+                        <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                        <a href="#" class="btn btn-primary ahovar ">See Profile</a>
+                 </div>
+                </div><br>
+                         <div class="card" style="width:250px">
+                    <img class="card-img-top" src="{% static 'image/food/food4.png' %}" alt="Card image"  style="height: 200px;width: 220px">
+                    <div class="card-body">
+                    <h4 class="card-title">John Doe</h4>
+                        <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                        <a href="#" class="btn btn-primary ahovar ">See Profile</a>
+                 </div>
+                </div><br>
+                         <div class="card" style="width:250px">
+                    <img class="card-img-top" src="{% static 'image/food/food1..png' %}" alt="Card image"  style="height: 200px;width: 220px">
+                    <div class="card-body">
+                    <h4 class="card-title">John Doe</h4>
+                        <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                        <a href="#" class="btn btn-primary ahovar ">See Profile</a>
+                 </div>
+                </div><br>
+                         <div class="card" style="width:250px">
+                    <img class="card-img-top" src="{% static 'image/food/food3.png' %}" alt="Card image"  style="height: 200px;width: 220px">
+                    <div class="card-body">
+                    <h4 class="card-title">John Doe</h4>
+                        <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                        <a href="#" class="btn btn-primary ahovar ">See Profile</a>
+                 </div>
+                </div>
+
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="card" style="width:250px">
+                    <img class="card-img-top" src="{% static 'image/food/food3.png' %}" alt="Card image"  style="height: 200px;width: 220px">
+                    <div class="card-body ">
+                    <h4 class="card-title">John Doe</h4>
+                        <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                        <a href="#" class="btn btn-primary ahovar">See Profile</a>
+                 </div>
+                </div><br>
+                        <div class="card" style="width:250px">
+                    <img class="card-img-top" src="{% static 'image/food/food9.png' %}" alt="Card image"  style="height: 200px;width: 220px">
+                    <div class="card-body ">
+                    <h4 class="card-title">John Doe</h4>
+                        <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                        <a href="#" class="btn btn-primary ahovar">See Profile</a>
+                 </div>
+                </div><br>
+                        <div class="card" style="width:250px">
+                    <img class="card-img-top" src="{% static 'image/food/food10.png' %}" alt="Card image"  style="height: 200px;width: 220px">
+                    <div class="card-body ">
+                    <h4 class="card-title">John Doe</h4>
+                        <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                        <a href="#" class="btn btn-primary ahovar">See Profile</a>
+                 </div>
+                </div><br>
+                        <div class="card" style="width:250px">
+                    <img class="card-img-top" src="{% static 'image/food/food11.png' %}" alt="Card image"  style="height: 200px;width: 220px">
+                    <div class="card-body ">
+                    <h4 class="card-title">John Doe</h4>
+                        <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                        <a href="#" class="btn btn-primary ahovar">See Profile</a>
+                 </div>
+                </div><br>
+                        <div class="card" style="width:250px">
+                    <img class="card-img-top" src="{% static 'image/food/food12.png' %}" alt="Card image"  style="height: 200px;width: 220px">
+                    <div class="card-body ">
+                    <h4 class="card-title">John Doe</h4>
+                        <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                        <a href="#" class="btn btn-primary ahovar">See Profile</a>
+                 </div>
+                </div><br>
+
+                    </div>
+
+
+                </div>
+
+
+              </div>
+          <div class="col-lg-3" style="margin-top: 50px;">
+
+        </div>
+    </div>
+</div>
+</div>
+</body>
+</html>
