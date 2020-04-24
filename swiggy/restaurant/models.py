@@ -13,3 +13,5 @@ class RestaurantModel(models.Model):
     restro_password = models.CharField(max_length=30)
     restro_otp = models.IntegerField()
     restro_status = models.CharField(max_length=30,default=False)
+
+# class RestaurantProduct(models.Model):

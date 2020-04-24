@@ -44,7 +44,7 @@ def resto_login_cheack(request):
             return render(request, 'restaurant/resto_login.html',{'loginForm': RestaurantLoginForm(), 'error': message})
         else:
             request.session['status'] = True
-            return redirect('restro_home')
+            return render(request,'restaurant/restro_home.html',{'res':res})
 
 
     except RestaurantModel.DoesNotExist:
@@ -53,3 +53,10 @@ def resto_login_cheack(request):
 
 def restro_home(request):
     return render(request,'restaurant/restro_home.html')
+
+# =============================under Restaurnat ======================================
+
+
+def food_add(request):
+
+    return None

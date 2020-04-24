@@ -26,4 +26,7 @@ urlpatterns = [
     path('resto_login_cheack/', views.resto_login_cheack, name="resto_login_cheack"),
     path('restro_home/', views.restro_home, name="restro_home"),
 
+    # ==================================under Retaurant=============================
+    path('food_add/', views.food_add, name="food_add"),
+
 ]
