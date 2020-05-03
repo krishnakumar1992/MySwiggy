@@ -1,5 +1,5 @@
 from django import forms
-from restaurant.models import RestaurantModel
+from restaurant.models import RestaurantModel,RestaurantProduct
 
 class RestaurantForm(forms.ModelForm):
     restro_password = forms.CharField(max_length=30,widget=forms.PasswordInput)
@@ -11,3 +11,9 @@ class RestaurantForm(forms.ModelForm):
 class RestaurantLoginForm(forms.Form):
     contact_no=forms.IntegerField()
     password=forms.CharField(max_length=40,widget=forms.PasswordInput)
+
+class productForm(forms.ModelForm):
+    class Meta:
+        model=RestaurantProduct
+        fields="__all__"
+        exclude=('product_id','restro_name')

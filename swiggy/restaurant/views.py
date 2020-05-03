@@ -43,7 +43,7 @@ def resto_login_cheack(request):
             message = "hello Restaurant " + res.restro_name + "Your Registration still need Cancel"
             return render(request, 'restaurant/resto_login.html',{'loginForm': RestaurantLoginForm(), 'error': message})
         else:
-            request.session['status'] = True
+            request.session['status'] =True
             return render(request,'restaurant/restro_home.html',{'res':res})
 
 
@@ -58,5 +58,18 @@ def restro_home(request):
 
 
 def food_add(request):
+    r_id=request.GET.get('restro_id')
+    rf=productForm(request.POST or None, request.FILES or None)
+    if rf.is_valid():
+        db = rf.save(commit=False)
+        db.restro_name = r_id
+        db.save()
+        return render(request,'restaurant/food_add.html',{'restro_id':r_id,'product':productForm()})
+    else:
+        return render(request,'restaurant/food_add.html',{'restro_id':r_id,'product':productForm()})
 
-    return None
+
+def food_detail(request):
+    r_id = request.GET.get('restro_id')
+    data=RestaurantProduct.objects.filter(restro_name=r_id)
+    return render(request,'restaurant/food_detail.html',{'data':data})

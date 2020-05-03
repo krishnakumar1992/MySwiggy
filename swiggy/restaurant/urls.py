@@ -28,5 +28,6 @@ urlpatterns = [
 
     # ==================================under Retaurant=============================
     path('food_add/', views.food_add, name="food_add"),
+    path('food_detail/', views.food_detail, name="food_detail"),
 
 ]

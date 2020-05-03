@@ -8,7 +8,11 @@
     {% if request.session.status %}
             {% include 'restaurant/restaurant_menu.html' %}
 
-             welcome {{ res.restro_name }}
+                welcome {{ res.restro_name }}
+        <input type="hidden" name="t1" value="{{ res.restro.id}}">
+
+
+
 
 
 
