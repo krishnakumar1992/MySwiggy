@@ -113,8 +113,9 @@
         <th>Delete </th>
       </tr>
     </thead>
-                    {% for i in data %}
+
     <tbody>
+      {% for i in data %}
       <tr>
         <td>{{ i.product_id }}</td>
         <td>{{ i.restro_name }}</td>
@@ -126,9 +127,10 @@
         <td><img src="{{ i.Product_image.url }}" height="100px" width="100px"></td>
 
       </tr>
+     {% endfor %}
       </tbody>
   </table>
-             {% endfor %}
+
          <div class="col-sm-3">
 
          </div>

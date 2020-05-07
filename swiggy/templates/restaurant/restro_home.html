@@ -1,7 +1,11 @@
 {% extends 'restaurant/comman.html' %}
 
 {% block css  %}
-
+<style>
+    .navbar{
+    color: #21ff11;
+}
+</style>
 {% endblock %}
 
 {% block common %}
@@ -9,7 +13,6 @@
             {% include 'restaurant/restaurant_menu.html' %}
 
                 welcome {{ res.restro_name }}
-        <input type="hidden" name="t1" value="{{ res.restro.id}}">
 
 
 

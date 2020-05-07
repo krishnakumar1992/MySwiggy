@@ -44,7 +44,9 @@ def resto_login_cheack(request):
             return render(request, 'restaurant/resto_login.html',{'loginForm': RestaurantLoginForm(), 'error': message})
         else:
             request.session['status'] =True
-            return render(request,'restaurant/restro_home.html',{'res':res})
+            response=render(request,'restaurant/restro_home.html',{'res':res})
+            response.set_cookie('User_id',int(uno))
+            return response
 
 
     except RestaurantModel.DoesNotExist:
@@ -52,13 +54,15 @@ def resto_login_cheack(request):
 
 
 def restro_home(request):
-    return render(request,'restaurant/restro_home.html')
+    id=request.COOKIES.get('User_id')
+    data=RestaurantModel.objects.get(restro_contact=id)
+    return render(request,'restaurant/restro_home.html',{'res':data})
 
 # =============================under Restaurnat ======================================
 
 
 def food_add(request):
-    r_id=request.GET.get('restro_id')
+    r_id=request.COOKIES.get('User_id')
     rf=productForm(request.POST or None, request.FILES or None)
     if rf.is_valid():
         db = rf.save(commit=False)
@@ -70,6 +74,11 @@ def food_add(request):
 
 
 def food_detail(request):
-    r_id = request.GET.get('restro_id')
+    r_id = request.COOKIES.get('User_id')
     data=RestaurantProduct.objects.filter(restro_name=r_id)
     return render(request,'restaurant/food_detail.html',{'data':data})
+
+
+def Restro_logout(request):
+    request.session['status'] = False
+    return redirect("resto_login")
