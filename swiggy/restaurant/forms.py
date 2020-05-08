@@ -15,5 +15,5 @@ class RestaurantLoginForm(forms.Form):
 class productForm(forms.ModelForm):
     class Meta:
         model=RestaurantProduct
-        fields="__all__"
+        fields=('product_name','product_quantity','product_price','product_discount','product_status','Product_img')
         exclude=('product_id','restro_name')

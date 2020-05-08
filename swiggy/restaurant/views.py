@@ -63,7 +63,7 @@ def restro_home(request):
 
 def food_add(request):
     r_id=request.COOKIES.get('User_id')
-    rf=productForm(request.POST or None, request.FILES or None)
+    rf=productForm(request.POST, request.FILES)
     if rf.is_valid():
         db = rf.save(commit=False)
         db.restro_name = r_id

@@ -24,7 +24,8 @@ class RestaurantProduct(models.Model):
     product_price=models.FloatField()
     product_discount=models.FloatField()
     product_status=models.CharField(max_length=500)
-    Product_image=models.FileField(upload_to='Restaurant/', null='True',blank='True')
+    Product_image=models.FileField(upload_to='Restro/', null='True',blank='True')
+    Product_img=models.ImageField(upload_to='Restaurant/', default='Restaurant/food6.jpg', null='True',blank='True')
 
     def __str__(self):
         return self.product_id

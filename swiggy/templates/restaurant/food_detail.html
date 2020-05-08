@@ -124,7 +124,9 @@
         <td>{{ i.product_price }}</td>
         <td>{{ i.product_discount }}</td>
         <td>{{ i.product_status }}</td>
-        <td><img src="{{ i.Product_image.url }}" height="100px" width="100px"></td>
+        <td><img src="{{ i.Product_img.url }}" height="100px" width="100px" alt="not found"></td>
+        <td><a href="">Update</a></td>
+        <td><a href="">Delete</a></td>
 
       </tr>
      {% endfor %}
