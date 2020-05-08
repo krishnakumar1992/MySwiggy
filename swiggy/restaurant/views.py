@@ -44,7 +44,8 @@ def resto_login_cheack(request):
             return render(request, 'restaurant/resto_login.html',{'loginForm': RestaurantLoginForm(), 'error': message})
         else:
             request.session['status'] =True
-            response=render(request,'restaurant/restro_home.html',{'res':res})
+            menu = RestaurantProduct.objects.filter(restro_name=uno)
+            response=render(request,'restaurant/restro_home.html',{'res':res,'menu':menu})
             response.set_cookie('User_id',int(uno))
             return response
 
@@ -56,7 +57,8 @@ def resto_login_cheack(request):
 def restro_home(request):
     id=request.COOKIES.get('User_id')
     data=RestaurantModel.objects.get(restro_contact=id)
-    return render(request,'restaurant/restro_home.html',{'res':data})
+    menu=RestaurantProduct.objects.filter(restro_name=id)
+    return render(request,'restaurant/restro_home.html',{'res':data,'menu':menu})
 
 # =============================under Restaurnat ======================================
 
