@@ -67,16 +67,17 @@
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
+
 </style>
 {% endblock %}
 
 {% block common %}
     {% if request.session.status %}
-            {% include 'restaurant/restaurant_menu.html' %}
+
 
      <div class="container">
      <div class="row">
-         <div class="col-sm-3">
+         <div class="col-sm-2">
             <div class="sidenav">
   <a href="#about">About</a>
   <a href="#services">Services</a>
@@ -95,8 +96,51 @@
 
 
          </div>
-         <div class="col-sm-6">
+         <div class="col-sm-7">
+         {% include 'restaurant/restaurant_menu.html' %}
              <br>
+         {% if food_update %}
+             <form  method="post" enctype="multipart/form-data">
+             {% csrf_token %}
+
+             <div class="form-group">
+                  <input type="hidden" value="{{ food_update.restro_name }}" name=" restro_name">
+           <tr>
+               <td>product Name</td>
+                <td><input type="text" class="form-control" value="{{ food_update.product_name }}" name="product_name"></td>
+           </tr>
+             <tr>
+               <td>product Quntity</td>
+                <td><input type="text" class="form-control" value="{{ food_update.product_quantity }}" name="product_quantity"></td>
+           </tr>
+             <tr>
+               <td>product Price</td>
+                <td><input type="text" class="form-control" value="{{ food_update.product_price }}" name="product_price"></td>
+           </tr>
+             <tr>
+               <td>product Discount</td>
+                <td><input type="text" class="form-control" value="{{ food_update.product_discount}}" name="product_discount"></td>
+           </tr>
+
+             <tr>
+               <td>product Status</td>
+                <td><input type="text" class="form-control" value="{{ food_update.product_status}}" name="product_status"></td>
+           </tr>
+            <tr>
+               <td>product Status</td>
+                <td><input type="file" class="form-control" name="Product_img"></td>
+           </tr>
+             <tr>
+               <td>product Image</td>
+                <td><img src="{{ food_update.Product_img.url }}" height="100px" width="100px" alt="not found" ></td>
+           </tr>
+             <tr>
+               <td>Click Hare .....</td>
+                <td><input type="submit" class="btn btn-primary" value="Update Hare"></td>
+           </tr>
+
+             </form>
+             <div>
 
                 <table class="table table-hover">
     <thead>
@@ -125,13 +169,49 @@
         <td>{{ i.product_discount }}</td>
         <td>{{ i.product_status }}</td>
         <td><img src="{{ i.Product_img.url }}" height="100px" width="100px" alt="not found"></td>
-        <td><a href="">Update</a></td>
+        <td><a href="{% url 'food_update' i.product_id %}" >Update</a></td>
         <td><a href="">Delete</a></td>
 
       </tr>
      {% endfor %}
       </tbody>
   </table>
+         {% else %}
+              <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Product ID</th>
+        <th>Restaurant ID</th>
+        <th>product Name</th>
+        <th>product Quntity</th>
+        <th>product Price </th>
+        <th>product Discount </th>
+        <th>product Status </th>
+        <th>product Image </th>
+        <th>update</th>
+        <th>Delete </th>
+      </tr>
+    </thead>
+
+    <tbody>
+      {% for i in data %}
+      <tr>
+        <td>{{ i.product_id }}</td>
+        <td>{{ i.restro_name }}</td>
+        <td>{{ i.product_name }}</td>
+        <td>{{ i.product_quantity }}</td>
+        <td>{{ i.product_price }}</td>
+        <td>{{ i.product_discount }}</td>
+        <td>{{ i.product_status }}</td>
+        <td><img src="{{ i.Product_img.url }}" height="100px" width="100px" alt="not found"></td>
+        <td><a href="{% url 'food_update' i.product_id %}" >Update</a></td>
+        <td><a href="">Delete</a></td>
+
+      </tr>
+     {% endfor %}
+      </tbody>
+  </table>
+             {% endif %}
 
          <div class="col-sm-3">
 

@@ -1,5 +1,7 @@
 from django.db import models
 from s_admin.models import Areamodel,RestaurantTypeModel
+from django.urls import reverse
+
 
 
 

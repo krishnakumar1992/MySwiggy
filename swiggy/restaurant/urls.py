@@ -31,6 +31,8 @@ urlpatterns = [
     # ==================================under Retaurant=============================
     path('food_add/', views.food_add, name="food_add"),
     path('food_detail/', views.food_detail, name="food_detail"),
+    path('food_update/<int:product_id>', views.food_update, name="food_update"),
+    # path('food_update_success/', views.food_update_success, name="food_update_success"),
     path('Restro_logout/', views.Restro_logout, name="Restro_logout"),
 
 ]

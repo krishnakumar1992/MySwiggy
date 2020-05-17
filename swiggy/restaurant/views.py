@@ -84,3 +84,37 @@ def food_detail(request):
 def Restro_logout(request):
     request.session['status'] = False
     return redirect("resto_login")
+
+
+def food_update(request,product_id):
+    update=RestaurantProduct.objects.get(product_id=product_id)
+    updatef_form = productForm(request.POST or None,request.FILES or None,instance=update)
+    if updatef_form.is_valid():
+        updatef_form.save()
+        return redirect("food_detail")
+    else:
+        r_id = request.COOKIES.get('User_id')
+        data = RestaurantProduct.objects.filter(restro_name=r_id)
+        return render(request,'restaurant/food_detail.html',{'food_update':update,'data':data})
+
+
+# def food_update_success(request):
+#     # id=request.POST.get('restro_name')
+#     # product_name=request.POST.get('product_name')
+#     # product_quantity=request.POST.get('product_quantity')
+#     # product_price=request.POST.get('product_price')
+#     # product_discount=request.POST.get('product_discount')
+#     # iproduct_statusd=request.POST.get('product_status')
+#     # Product_img=request.POST.get('Product_img')
+#     product_id=request.POST.get('restro_name')
+#     update = RestaurantProduct.objects.get(restro_name=product_id)
+#     updatef_form= productForm(request.POST,request.FILES,instance=update)
+#     if updatef_form.is_valid():
+#         updatef_form.save()
+#         return render(request,'restaurant/food_detail.html')
+
+
+ # sno = request.POST.get('s1')
+ #    sname = request.POST.get('s2')
+ #    Areamodel.objects.filter(Area_no=sno).update(Area_name=sname)
+ #    return redirect('open_area')
