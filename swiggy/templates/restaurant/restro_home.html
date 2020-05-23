@@ -69,6 +69,39 @@ img {vertical-align: middle;}
 .col-sm-4{
     padding: 8px;
 }
+.card{
+    border-radius: 15px;
+    height: 360px;
+
+}
+.zoom{
+    overflow: hidden;
+    border-radius: 15px 15px 0 0;
+}
+.card:hover{
+    box-shadow: 0 0 15px black;
+}
+
+.zoom:hover img{
+    transform: scale(1.2,1.2 );
+    box-shadow: 0 0 15px black;
+
+}
+.zoom img{
+    max-height: 180px;
+    max-width: 100%;
+    border-radius: 15px 15px 0 0;
+}
+.card_arrange h6{
+    color: #ff2f23;
+    padding-right: 35px;
+    float: left;
+}
+.card-body p{
+    color: #ffce11;
+
+}
+
 </style>
 {% endblock %}
 {% block bg %}
@@ -116,10 +149,15 @@ style="background-image: url({% static 'coural/background_image.jpg' %});backgro
             {% for x in menu %}
 <div class="col-sm-4">
 <div class="card" style="width: 18rem;">
-  <img src="{{ x.Product_img.url }}" class="card-img-top" alt="..." style="width=100%;height: 165px" >
+    <div class="zoom">
+        <img src="{{ x.Product_img.url }}" class="card-img-top" alt="..." >
+    </div>
   <div class="card-body">
-    <h5>{{ x.product_name }}</h5><h6>{{ x.product_price }}</h6>
+      <div class="card_arrange">
+    <h5>{{ x.product_name }}&nbsp;&nbsp;<span style="font-size: 10px">	{{ x.product_price }}</span></h5>
+
     <p >{{ x.product_status }}</p>
+          </div>
     <a href="#" class="btn btn-primary">Go somewhere</a>
   </div>
 </div>

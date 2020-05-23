@@ -46,7 +46,7 @@ def resto_login_cheack(request):
             request.session['status'] =True
             menu = RestaurantProduct.objects.filter(restro_name=uno)
             response=render(request,'restaurant/restro_home.html',{'res':res,'menu':menu})
-            response.set_cookie('User_id',int(uno))
+            response.set_cookie('User_id',uno)
             return response
 
 
@@ -65,14 +65,14 @@ def restro_home(request):
 
 def food_add(request):
     r_id=request.COOKIES.get('User_id')
-    rf=productForm(request.POST, request.FILES)
+    rf=productForm(request.POST,request.FILES)
     if rf.is_valid():
         db = rf.save(commit=False)
         db.restro_name = r_id
         db.save()
         return render(request,'restaurant/food_add.html',{'restro_id':r_id,'product':productForm()})
     else:
-        return render(request,'restaurant/food_add.html',{'restro_id':r_id,'product':productForm()})
+        return render(request,'restaurant/food_add.html',{'product':productForm()})
 
 
 def food_detail(request):

@@ -1,25 +1,60 @@
 {% extends 's_admin/comman.html' %}
 {% load static %}
+{% block additional_styles %}
+<style>
+.login_class{
 
+    width: 450px;
+    margin: auto;
+
+    padding: 10px;
+    border-radius: 15px ;
+
+    }
+input[type="text"],input[type="password"]{
+    font-family: "Brush Script MT";
+    border-radius: 15px;
+    width: 250px;
+    font-size: 18px;
+}
+input[type="text"]:focus,input[type="password"]:focus{
+    background-color: #b5ffe9;
+}
+button[type="submit"]{
+    width: 120px;
+    border-radius: 15px;
+}
+button[type="submit"]:hover{
+    background-color: #b5ffe9;
+    box-shadow: 0 2px 20px black;
+    cursor: pointer;
+    font-size: 20px;
+    color: black;
+}
+</style>
+
+
+{% endblock %}
 {% block bg %}style="background-image: url({% static 'image/home_login.jpg' %});background-repeat: no-repeat;
     background-position: top;
     background-attachment: fixed;background-size: 1300px 900px;" {% endblock %}
 {% block common %}
+    <div class="login_class">
      <form action="{% url 'cheakLogin' %}" method="post">
      {% csrf_token %}
     <table align="center" border="0">
     <tr>
-        <th colspan="4" height="80" width="100" style="font-size: 35px; text-align: center; color:#21ff11; font-family:Cinzel Black ">Admin Login Page</th>
+        <th colspan="4" height="80" width="100" style="font-size: 35px; text-align: center; color:#f2f2f2; font-family:Cinzel Black;text-shadow: 0 0 15px #111111 ">Admin Login Page</th>
     </tr>
     <tr>
         <td height="80" width="100" style="color:#fffcff;font-size: 25px;font-family: 'Elephant' ">usernem</td>
         <td></td>
-        <td><input class="form-control" type="text" required name="admin_username"> </td>
+        <td><input class="form-control" type="text" required name="admin_username" placeholder="Enter Username"> </td>
     </tr>
     <tr>
         <td height="80" width="100" style="color:#fffcff;font-size: 25px;font-family: 'Elephant' ">password</td>
          <td></td>
-        <td><input class="form-control" type="password" required name="admin_password"> </td>
+        <td><input class="form-control" type="password" required name="admin_password" placeholder="Enter Password"> </td>
     </tr>
     <tr>
 
@@ -36,6 +71,7 @@
         {% endfor %}
     </table>
      </form>
+    </div>
     {% endblock %}
 
 
