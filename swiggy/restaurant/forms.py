@@ -13,7 +13,14 @@ class RestaurantLoginForm(forms.Form):
     password=forms.CharField(max_length=40,widget=forms.PasswordInput)
 
 class productForm(forms.ModelForm):
+    product_name = forms.CharField(max_length=60,widget=forms.TextInput(attrs={'placeholder': 'Product Name'}))
+    product_quantity = forms.IntegerField(widget=forms.TextInput(attrs={'id': 'quty'}))
+    product_price = forms.FloatField(widget=forms.TextInput(attrs={'id': 'price','class':'input'}))
+    product_discount = forms.FloatField(widget=forms.TextInput(attrs={'id': 'discount','class':'input'}))
+    product_status = forms.CharField(max_length=500,widget=forms.TextInput(attrs={'placeholder': 'Enter Status Hare '}))
+    product_result = forms.FloatField(widget=forms.TextInput(attrs={'id': 'result','readonly':''}))
+
     class Meta:
         model=RestaurantProduct
-        fields=('product_name','product_quantity','product_price','product_discount','product_status','Product_img')
+        fields=('product_name','product_quantity','product_price','product_discount','product_result','product_status','Product_img')
         exclude=('product_id','restro_name')

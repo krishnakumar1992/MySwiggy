@@ -1,6 +1,7 @@
 {% extends 'restaurant/comman.html' %}
 
 {% block css  %}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 /* Fixed sidenav, full height */
@@ -115,11 +116,15 @@
            </tr>
              <tr>
                <td>product Price</td>
-                <td><input type="text" class="form-control" value="{{ food_update.product_price }}" name="product_price"></td>
+                <td><input type="text" class="input form-control" value="{{ food_update.product_price }}" id="price" name="product_price"></td>
            </tr>
              <tr>
                <td>product Discount</td>
-                <td><input type="text" class="form-control" value="{{ food_update.product_discount}}" name="product_discount"></td>
+                <td><input type="text" class="form-control" value="{{ food_update.product_discount}}" id="discount" name="product_discount"></td>
+           </tr>
+                    <tr>
+               <td>product Result</td>
+                <td><input type="text" class="form-control" value="{{ food_update.product_result}}" id="result" name="product_result" readonly=""></td>
            </tr>
 
              <tr>
@@ -151,6 +156,7 @@
         <th>product Quntity</th>
         <th>product Price </th>
         <th>product Discount </th>
+        <th>product Result </th>
         <th>product Status </th>
         <th>product Image </th>
         <th>update</th>
@@ -167,6 +173,7 @@
         <td>{{ i.product_quantity }}</td>
         <td>{{ i.product_price }}</td>
         <td>{{ i.product_discount }}</td>
+        <td>{{ i.product_result }}</td>
         <td>{{ i.product_status }}</td>
         <td><img src="{{ i.Product_img.url }}" height="100px" width="100px" alt="not found"></td>
         <td><a href="{% url 'food_update' i.product_id %}" >Update</a></td>
@@ -185,7 +192,7 @@
         <th>product Name</th>
         <th>product Quntity</th>
         <th>product Price </th>
-        <th>product Discount </th>
+        <th>product Discount </th><th>product Result </th>
         <th>product Status </th>
         <th>product Image </th>
         <th>update</th>
@@ -202,6 +209,7 @@
         <td>{{ i.product_quantity }}</td>
         <td>{{ i.product_price }}</td>
         <td>{{ i.product_discount }}</td>
+          <td>{{ i.product_result }}</td>
         <td>{{ i.product_status }}</td>
         <td><img src="{{ i.Product_img.url }}" height="100px" width="100px" alt="not found"></td>
         <td><a href="{% url 'food_update' i.product_id %}" >Update</a></td>
@@ -244,3 +252,18 @@ for (i = 0; i < dropdown.length; i++) {
 
     {% endif %}
 {% endblock %}
+{% block script %}
+    <script>
+  $('.input').on('input',function()
+  {
+      var x=document.getElementById('price').value;
+      x=parseFloat(x);
+      var y=document.getElementById('discount').value;
+      y=parseFloat(y);
+      document.getElementById('result').value=x-y;
+  })
+
+
+
+     </script>
+  {% endblock %}
