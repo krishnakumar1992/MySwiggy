@@ -9,8 +9,8 @@ class RestaurantForm(forms.ModelForm):
         exclude = ('restro_id', 'restro_otp', 'restro_status')
 
 class RestaurantLoginForm(forms.Form):
-    contact_no=forms.IntegerField()
-    password=forms.CharField(max_length=40,widget=forms.PasswordInput)
+    contact_no=forms.IntegerField(widget=forms.TextInput(attrs={'placeholder': 'Enter Your UserName','class':'text_box'}),label="")
+    password=forms.CharField(max_length=40,widget=forms.PasswordInput(attrs={'placeholder': 'Enter Your Password','class':'text_box'}),label="")
 
 class productForm(forms.ModelForm):
     product_name = forms.CharField(max_length=60,widget=forms.TextInput(attrs={'placeholder': 'Product Name'}))

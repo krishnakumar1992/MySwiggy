@@ -1,22 +1,78 @@
 {% extends 'restaurant/comman.html' %}
 {% load crispy_forms_tags %}
+{% load static %}
+{% block css  %}
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+  />
+<style>
+.btn{
+    width: 110px;
+    cursor: pointer;
+    border-radius: 15px;
+    box-shadow: 0 3px 12px black;
+    border-color:antiquewhite;
+    margin-bottom: 20px;
+}
+.btn:hover{
+     box-shadow: 0 3px 12px black;
+    color: #ff2f23;
+    background-color: cyan;
+}
+.text_box{
+    border: none;
+    outline: none;
+    font-family: "Times New Roman";
+    text-align: center;
+    font-size: 18px;
+    height: 35px;
+    background: transparent;
+    border-bottom: 3px solid #ffce11;
+}
+.text_box:focus{
+     border-bottom: 3px solid #b5ffe9;
+}
+::placeholder{
+    color: #ffce11;
+}
+.form-div
+{
+
+    margin: 20px auto;
+    width: 390px;
+    border-radius: 15px;
+    box-shadow: 0 3px 12px #ffce11;
+
+}
+
+.col-sm-8 h1
+{
+   text-align: center; font-family: 'Times New Roman';margin-top: 100px
+}
+
+
+</style>
+{% endblock %}
 {% block common %}
   {% include 'restaurant/main_menu.html' %}
 
-    <form action="{% url 'resto_login_cheack' %}" method="post">
-    {% csrf_token %}
 <div class="row">
  <div class="col-sm-2">
-
  </div>
 <div class="col-sm-8 text-center">
-    <br>
-     <h1 style="text-align: center; font-family: 'Times New Roman';">Restaurant Login Form</h1>
 
+<div class="form-div animate__animated animate__flip">
+<form action="{% url 'resto_login_cheack' %}" method="post">
+    {% csrf_token %}
+
+{#      <img src="{% static "image/food/sweegy_logo.png" %}" alt="My image"/>#}
+<h1> Login Form</h1>
     <table align="center">{{ loginForm.as_table }}</table>
 <div class="text-center">
     <br>
-    <button type="submit" class="btn btn-danger">Login</button>
+    <button type="submit" class="btn">Login</button>
+</div>
     {% if error %}
     <div class="alert alert-danger alert-dismissible">
   <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
@@ -24,14 +80,10 @@
         {% endif %}
 </div>
 </div>
-
 </div>
-
  </div>
 <div class="col-sm-2">
-
  </div>
-
 </div>
     </form>
 {% endblock %}
